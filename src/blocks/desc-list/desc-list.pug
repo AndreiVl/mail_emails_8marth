@@ -1,0 +1,44 @@
+mixin desc-list(data)
+	+row({
+		col: 2,
+		bg_body: bg_body,
+		body_pading_l: body_pading_l,
+		body_pading_r: body_pading_r,
+		body_width: col_body_width,
+		rtl: false,
+		margin_top_class: false,
+		margin_bottom: mr_turquoise,
+		content: {
+			colWidth: td_2_col_width,
+			colPadding: '10px 10px',
+			valing_right: 'middle',
+			valing_left: 'middle',
+			col2_left: {
+				name: 'desc-item',
+				arg: {
+					text: 'Не нужно стоять в длинных очередях за покупками – покажите своим близким как вы их любите, сделав подарок своими руками.',
+					linkUrl: '#',
+					linkText: 'Подробней'
+				}
+			},
+			col2_right: {
+				name: 'desc-item',
+				arg: {
+					text: 'Заботиться об окружающей среде не сложно. Каждый может заменить обычные предметы окружения, на экологически чистые.',
+					linkUrl: '#',
+					linkText: 'Подробней'
+				}
+			}
+		}
+	})
+
+mixin desc-item(data)
+	table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%")
+		tr
+			td.text.text--grey(align='left')!=data.text
+		tr
+			+td-margin({height: mr_darkblue})
+		tr
+			<!-- ID:TXT ELEMENT HEADING -->
+			td.text.text--link.text--grey.text--up(align='left')
+				a.link.link--text(href=data.linkUrl)!=data.linkText

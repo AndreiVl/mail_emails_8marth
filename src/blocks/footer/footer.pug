@@ -1,0 +1,52 @@
+mixin footer(data)
+	+row({
+		col: 1,
+		bg_body: bg_body_2,
+		body_pading_l: body_pading_l,
+		body_pading_r: body_pading_r,
+		body_width: body_width,
+		rtl: false,
+		margin_top: mr_mediumblue,
+		margin_bottom: mr_darkblue,
+		content: {
+			name: 'text',
+			arg: [
+				{
+					type: 'text',
+					class: 'text text--sm text--grey',
+					text: 'Если письмо открывается не корректно, откройте его в <a href="#" class="link link--grey" target="_blank">браузере.</a><br>Если вы больше не хотите получать промокоды на скидки, спецпредложения и наши новости, перейдите по <a href="#" class="link link--grey" target="_blank">ссылке.</a>',
+					alignment: 'left'
+				},
+				{
+					type: 'margin',
+					margin: mr_violet
+				},
+				{
+					type: 'text',
+					class: 'text text--sm text--bold',
+					text: '<a href="tel:+78000100001" class="link">8 800 010 00 01</a>',
+					alignment: 'left'
+				},
+				{
+					type: 'text',
+					class: 'text text--sm text--grey',
+					text: 'Звонок по России бесплатный.',
+					alignment: 'left'
+				},
+				{
+					type: 'divider-bottom',
+					margin: mr_purpur
+				},
+				{
+					type: 'margin',
+					margin: mr_violet
+				},
+				{
+					type: 'text',
+					class: 'text text--sm text--grey',
+					text: '2020 @ Все права защищены.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Сеть&nbsp;магазинов&nbsp;«Cosmetics»',
+					alignment: 'left'
+				}
+			]
+		}
+	})

@@ -1,0 +1,239 @@
+mixin card-list(data)
+	if data.cardList1
+		+row({
+			col: 3,
+			bg_body: bg_body,
+			body_pading_l: body_pading_l,
+			body_pading_r: body_pading_r,
+			body_width: col_body_width_3,
+			rtl: false,
+			margin_top_class: false,
+			margin_bottom: mr_turquoise,
+			content: {
+				colWidth: td_3_col_width,
+				colPadding: '10px 10px',
+				items: [
+					{	valign: 'top',
+						name: 'card-item',
+						arg: {
+							cardItemImg: '8marth-img-card-140-151-01.jpg',
+							cardItemImgAlt: 'Очищающий гель',
+							cardItemImgWidth: '140',
+							cardItemImgHeight: '151',
+							cardItemMargin: mr_violet,
+							cardItemUrl: '#',
+							cardItemLink: 'Очищающий гель'
+						}
+					},
+					{	valign: 'top',
+						name: 'card-item',
+						arg: {
+							cardItemImg: '8marth-img-card-140-151-02.jpg',
+							cardItemImgAlt: 'Крем маска',
+							cardItemImgWidth: '140',
+							cardItemImgHeight: '151',
+							cardItemMargin: mr_violet,
+							cardItemUrl: '#',
+							cardItemLink: 'Крем маска'
+						}
+					},
+					{	valign: 'top',
+						name: 'card-item',
+						arg: {
+							cardItemImg: '8marth-img-card-140-151-03.jpg',
+							cardItemImgAlt: 'Лучший парфюм',
+							cardItemImgWidth: '140',
+							cardItemImgHeight: '151',
+							cardItemMargin: mr_violet,
+							cardItemUrl: '#',
+							cardItemLink: 'Лучший парфюм'
+						}
+					},
+					{	valign: 'top',
+						name: 'card-item',
+						arg: {
+							cardItemImg: '8marth-img-card-140-151-04.jpg',
+							cardItemImgAlt: 'Мыло с маслами',
+							cardItemImgWidth: '140',
+							cardItemImgHeight: '151',
+							cardItemMargin: mr_violet,
+							cardItemUrl: '#',
+							cardItemLink: 'Мыло с маслами'
+						}
+					},
+					{	valign: 'top',
+						name: 'card-item',
+						arg: {
+							cardItemImg: '8marth-img-card-140-151-05.jpg',
+							cardItemImgAlt: 'Новинки косметики',
+							cardItemImgWidth: '140',
+							cardItemImgHeight: '151',
+							cardItemMargin: mr_violet,
+							cardItemUrl: '#',
+							cardItemLink: 'Новинки косметики'
+						}
+					},
+					{	valign: 'top',
+						name: 'card-item',
+						arg: {
+							cardItemImg: '8marth-img-card-140-151-06.jpg',
+							cardItemImgAlt: 'Звездный лак',
+							cardItemImgWidth: '140',
+							cardItemImgHeight: '151',
+							cardItemMargin: mr_violet,
+							cardItemUrl: '#',
+							cardItemLink: 'Звездный лак'
+						}
+					},
+					{	valign: 'top',
+						name: 'card-item',
+						arg: {
+							cardItemImg: '8marth-img-card-140-151-07.jpg',
+							cardItemImgAlt: 'Молочко для лица',
+							cardItemImgWidth: '140',
+							cardItemImgHeight: '151',
+							cardItemMargin: mr_violet,
+							cardItemUrl: '#',
+							cardItemLink: 'Молочко для лица'
+						}
+					},
+					{	valign: 'top',
+						name: 'card-item',
+						arg: {
+							cardItemImg: '8marth-img-card-140-151-08.jpg',
+							cardItemImgAlt: 'Новый Jo Malone',
+							cardItemImgWidth: '140',
+							cardItemImgHeight: '151',
+							cardItemMargin: mr_violet,
+							cardItemUrl: '#',
+							cardItemLink: 'Новый Jo Malone'
+						}
+					},
+					{	valign: 'top',
+						name: 'card-item',
+						arg: {
+							cardItemImg: '8marth-img-card-140-151-09.jpg',
+							cardItemImgAlt: 'Увлажняющий лосьон',
+							cardItemImgWidth: '140',
+							cardItemImgHeight: '151',
+							cardItemMargin: mr_violet,
+							cardItemUrl: '#',
+							cardItemLink: 'Увлажняющий лосьон'
+						}
+					}
+				]
+			}
+		})
+	if data.cardList2
+		+row({
+			col: 2,
+			bg_body: bg_body,
+			body_pading_l: body_pading_l,
+			body_pading_r: body_pading_r,
+			body_width: col_body_width,
+			rtl: false,
+			margin_top: false,
+			margin_top_class: false,
+			margin_bottom: false,
+			content: {
+				colWidth: td_2_col_width,
+				colPadding: '10px 10px',
+				valing_right: 'middle',
+				valing_left: 'middle',
+				col2_left: {
+					name: 'card-item',
+					arg: {
+						cardItemImg: '8marth-img-card-220-220-01.jpg',
+						cardItemImgAlt: 'ONNE',
+						cardItemImgWidth: '220',
+						cardItemImgHeight: '220',
+						cardItemMargin: mr_violet,
+						cardItemUrl: '#',
+						cardItemLink: 'ONNE'
+					}
+				},
+				col2_right: {
+					name: 'card-item',
+					arg: {
+						cardItemImg: '8marth-img-card-220-220-02.jpg',
+						cardItemImgAlt: 'Молочко для лица',
+						cardItemImgWidth: '220',
+						cardItemImgHeight: '220',
+						cardItemMargin: mr_violet,
+						cardItemUrl: '#',
+						cardItemLink: 'Очищающий гель'
+					}
+				}
+			}
+		})
+	if data.cardList3 
+		+row({
+			col: 3,
+			bg_body: bg_body,
+			body_pading_l: body_pading_l,
+			body_pading_r: body_pading_r,
+			body_width: col_body_width_3,
+			rtl: false,
+			margin_top_class: false,
+			margin_bottom: false,
+			content: {
+				colWidth: td_3_col_width,
+				colPadding: '10px 10px',
+				items: [
+					{	valign: 'top',
+						name: 'card-item',
+						arg: {
+							cardItemImg: '8marth-img-card-140-151-07.jpg',
+							cardItemImgAlt: 'Молочко для лица',
+							cardItemImgWidth: '140',
+							cardItemImgHeight: '151',
+							cardItemMargin: mr_violet,
+							cardItemUrl: '#',
+							cardItemLink: 'Молочко для лица'
+						}
+					},
+					{	valign: 'top',
+						name: 'card-item',
+						arg: {
+							cardItemImg: '8marth-img-card-140-151-08.jpg',
+							cardItemImgAlt: 'Новый Jo Malone',
+							cardItemImgWidth: '140',
+							cardItemImgHeight: '151',
+							cardItemMargin: mr_violet,
+							cardItemUrl: '#',
+							cardItemLink: 'Новый Jo Malone'
+						}
+					},
+					{	valign: 'top',
+						name: 'card-item',
+						arg: {
+							cardItemImg: '8marth-img-card-140-151-09.jpg',
+							cardItemImgAlt: 'Увлажняющий лосьон',
+							cardItemImgWidth: '140',
+							cardItemImgHeight: '151',
+							cardItemMargin: mr_violet,
+							cardItemUrl: '#',
+							cardItemLink: 'Увлажняющий лосьон'
+						}
+					}
+				]
+			}
+		})
+
+
+mixin card-item(data)
+	table.table-after-div(align="center" bgcolor=data.block_bg border="0" cellpadding="0" cellspacing="0" width="100%")
+		tr
+			td(align='center' style="line-height: 0px;" width=data.cardItemImgWidth)
+				+img({
+					img_big: data.cardItemImg, 
+					alt: data.cardItemImgAlt,
+					width: data.cardItemImgWidth,
+					height: data.cardItemImgHeight
+				})
+		tr
+			+td-margin({height: data.cardItemMargin})
+		tr
+			<!-- ID:TXT ELEMENT HEADING -->
+			td.h2(align='center')
+				a.link.link--text(href=data.cardItemUrl)!=data.cardItemLink

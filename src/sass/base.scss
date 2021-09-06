@@ -1,0 +1,50 @@
+body {
+	/* 2 Block model */
+	padding: 0px;
+	margin: 0px;
+}
+table {
+	/* 4 Visual */
+	border-spacing: 0;
+}
+.word-break {
+	/* 2 Block model */
+	display: block;
+
+	/* 3 Typography */
+	word-break: break-all;
+	word-wrap: break-word;
+}
+.divider {
+	/* 4 Visual */
+	border-top: 1px solid $color-border-2;
+}
+.divider-bottom {
+	/* 4 Visual */
+	border-bottom: 1px solid $color-border-2;
+}
+.intro-page__list {
+	/* 2 Block model */
+	margin: 25px 20px;
+	padding: 0;
+
+	/* 4 Visual */
+	list-style: none;
+}
+.intro-page__list li {
+	/* 2 Block model */
+	padding: 3px 5px;
+}
+.intro-page__list li:nth-child(2n) {
+	/* 4 Visual */
+	background-color: #eee;
+}
+.intro-page__list a {
+	/* 3 Typography */
+	color: #000000;
+	text-decoration: none;
+}
+.intro-page__list a:hover {
+	/* 3 Typography */
+	text-decoration: underline;
+}

@@ -1,0 +1,51 @@
+mixin preheaders(data)
+	if data.preheaders1
+		+row({
+			col: 1,
+			bg_body: bg_body,
+			body_pading_l: body_pading_l,
+			body_pading_r: body_pading_r,
+			body_width: body_width,
+			rtl: false,
+			margin_top: mr_crayola,
+			margin_bottom: mr_crayola,
+			content: {
+				name: 'preheadersContent',
+				arg: {
+					linkTelUrl: 'tel:+78000100001',
+					linkTel: '8 800 010 00 01',
+					linkUrl: '#',
+					linkText: 'Открыть в браузере'
+				}
+			}
+		})
+
+	if data.preheaders2
+		+row({
+			col: 1,
+			bg_body: bg_body_2,
+			body_pading_l: body_pading_l,
+			body_pading_r: body_pading_r,
+			body_width: body_width,
+			rtl: false,
+			margin_top: mr_crayola,
+			margin_bottom: mr_purpur,
+			content: {
+				name: 'preheadersContent',
+				arg: {
+					linkTelUrl: 'tel:+78000100001',
+					linkTel: '8 800 010 00 01',
+					linkUrl: '#',
+					linkText: 'Открыть в браузере'
+				}
+			}
+		})
+
+mixin preheadersContent(data)
+	table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-spacing: 0;")
+		tr
+			td.text.text--sm(align="left")
+				a.link.link--no-decor(href=data.linkTelUrl)!=data.linkTel
+			td.text.text--sm(align="right")
+				a.link.link--grey(href=data.linkUrl target="_blank")!=data.linkText
+

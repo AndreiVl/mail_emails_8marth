@@ -1,0 +1,137 @@
+mixin header(data)
+	if data.header1
+		+row({
+			col: 1,
+			styleTableSection: 'border-bottom: 1px solid #F5F5F5;', 
+			bg_body: bg_body,
+			body_pading_l: body_pading_l,
+			body_pading_r: body_pading_r,
+			body_width: body_width,
+			rtl: false,
+			margin_top: mr_mediumblue,
+			content: {
+				name: 'text',
+				arg: [
+					{
+						type: 'content',
+						alignment: 'center',
+						name: 'img',
+						arg: {
+							link: '#',
+							img_link: '8marth-logo-124-31-01.png',
+							alt: 'Logo',
+							width: '124',
+							height: '34'
+						}
+					},
+					{
+						type: 'margin',
+						margin: mr_purpur
+					},
+					{
+						type: 'content',
+						alignment: 'center',
+						name: 'menu',
+						arg: {
+							link_1: 'Макияж ',
+							link_2: 'Парфюмерия',
+							link_3: 'Для волос',
+							link_4: 'Уход за кожей'
+						}
+					},
+					{
+						type: 'margin',
+						margin: mr_violet
+					}
+				]
+			}
+		})
+	if data.header2
+		+row({
+			col: 1,
+			bg_body: bg_body,
+			body_pading_l: body_pading_l,
+			body_pading_r: body_pading_r,
+			body_width: body_width,
+			rtl: false,
+			margin_top: mr_mediumblue,
+			margin_bottom: mr_purpur,
+			content: {
+				name: 'text',
+				arg: [
+					{
+						type: 'content',
+						alignment: 'center',
+						name: 'img',
+						arg: {
+							link: '#',
+							img_link: '8marth-logo-124-31-01.png',
+							alt: 'Logo',
+							width: '124',
+							height: '34'
+						}
+					},
+					{
+						type: 'margin',
+						margin: mr_purpur
+					},
+					{
+						type: 'content',
+						alignment: 'center',
+						name: 'menu',
+						arg: {
+							link_1: 'Макияж ',
+							link_2: 'Парфюмерия',
+							link_3: 'Для волос',
+							link_4: 'Уход за кожей'
+						}
+					}
+				]
+			}
+		})
+	if data.header3
+		+row({
+			col: 1,
+			bg_body: bg_body,
+			body_pading_l: body_pading_l,
+			body_pading_r: body_pading_r,
+			body_width: body_width,
+			rtl: false,
+			margin_top: mr_mediumblue,
+			content: {
+				name: 'text',
+				arg: [
+					{
+						type: 'content',
+						alignment: 'center',
+						name: 'img',
+						arg: {
+							link: '#',
+							img_link: '8marth-logo-124-31-01.png',
+							alt: 'Logo',
+							width: '124',
+							height: '34'
+						}
+					},
+					{
+						type: 'margin',
+						margin: mr_purpur
+					},
+					{
+						type: 'content',
+						alignment: 'center',
+						name: 'menu',
+						arg: {
+							link_1: 'Макияж ',
+							link_2: 'Парфюмерия',
+							link_3: 'Для волос',
+							link_4: 'Уход за кожей'
+						}
+					},
+					{
+						type: 'divider-bottom',
+						margin: mr_violet
+					}
+				]
+			}
+		})

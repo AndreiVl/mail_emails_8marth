@@ -1,0 +1,95 @@
+mixin socials(data)
+	if data.changeTitle 
+		- var changeTitle=data.changeTitle
+	else
+		- var changeTitle='Мы в соцсетях'
+
+	if data.changeList
+		- var changeList=data.changeList
+	else
+		-
+			var changeList = [
+				{
+					type: 'icon',
+					iconLink: '#',
+					iconImg: '8marth-social-28-28-vkontakte.png',
+					iconWidth: 29,
+					iconHeight: 28
+				},
+				{
+					type: 'margirn',
+					margirnWidth: 21
+				},
+				{
+					type: 'icon',
+					iconLink: '#',
+					iconImg: '8marth-social-28-28-odnoklassniki.png',
+					iconWidth: 29,
+					iconHeight: 28
+				},
+				{
+					type: 'margirn',
+					margirnWidth: 21
+				},
+				{
+					type: 'icon',
+					iconLink: '#',
+					iconImg: '8marth-social-28-28-facebook.png',
+					iconWidth: 29,
+					iconHeight: 28
+				},
+				{
+					type: 'margirn',
+					margirnWidth: 21
+				},
+				{
+					type: 'icon',
+					iconLink: '#',
+					iconImg: '8marth-social-28-28-instagram.png',
+					iconWidth: 29,
+					iconHeight: 28
+				}
+			]
+	if data.social
+		+row({
+			col: 1,
+			styleTableSection: 'border-bottom: 5px solid #FF80BD;',
+			alignTd: 'center',
+			bg_body: bg_body,
+			body_pading_l: body_pading_l,
+			body_pading_r: body_pading_r,
+			body_width: body_width,
+			rtl: false,
+			margin_bottom: mr_turquoise,
+			content: {
+				name: 'social',
+				arg: {
+					title: changeTitle,
+					alignment: 'center',
+					margin_title: mr_purpur,
+					items: changeList
+				}
+			}
+		})
+	if data.socialTop
+		+row({
+			col: 1,
+			styleTableSection: 'border-bottom: 5px solid #FF80BD;',
+			alignTd: 'center',
+			bg_body: bg_body,
+			body_pading_l: body_pading_l,
+			body_pading_r: body_pading_r,
+			body_width: body_width,
+			rtl: false,
+			margin_top: mr_turquoise,
+			margin_bottom: mr_turquoise,
+			content: {
+				name: 'social',
+				arg: {
+					title: changeTitle,
+					alignment: 'center',
+					margin_title: mr_purpur,
+					items: changeList
+				}
+			}
+		})

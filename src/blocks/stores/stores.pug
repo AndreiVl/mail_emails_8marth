@@ -1,0 +1,56 @@
+mixin stores(data)
+	if data.changeTitle 
+		- var changeTitle=data.changeTitle
+	else
+		- var changeTitle='Присоединяйтесь к нам!'
+
+	+row({
+		col: 1,
+		bg_body: bg_body_2,
+		body_pading_l: nul_pading_l,
+		body_pading_r: nul_pading_l,
+		body_width: table_width,
+		rtl: false,
+		margin_top: 40,
+		margin_bottom: 11,
+		content: {
+			name: 'menu-2-mix',
+			arg: {
+				leftWidth: 310,
+				rightWidth: 330,
+				rightWidthIe: 125,
+				rightWidthDiv: 125,
+				rightWidthTable: 120,
+				rightWidthIe2: 202,
+				rightWidthDiv2: 202,
+				rigthHeight: 14.5,
+				leftContent: {
+					name: 'text',
+					arg: [
+						{
+							type: 'text',
+							class: 'h3',
+							text: 'Приложение ДомКлик',
+							alignment: 'left'
+						},
+						{
+							type: 'margin',
+							margin: 8
+						},
+						{
+							type: 'text',
+							class: 'text text--sm',
+							text: 'Отправьте заявку на ипотеку и выберите подходящую квартиру прямо в приложении!',
+							alignment: 'left'
+						},
+					]
+				},
+				rightContent: {
+					name: 'store',
+					arg: {
+
+					}
+				}
+			}
+		}
+	})
