@@ -32,16 +32,14 @@ table {
 	list-style: none;
 }
 .intro-page__list li {
-	/* 2 Block model */
-	padding: 7px 15px;
-
 	/* 3 Typography */
 	font-size: 20px;
 	line-height: 28px;
 	text-transform: capitalize;
-
-	/* 4 Visual */
-	cursor: pointer;
+}
+.intro-page__list li a {
+	/* 2 Block model */
+	padding: 7px 15px;
 
 	/* 5 Animation */
 	transition: all 0.4s ease;
@@ -53,20 +51,27 @@ table {
 	/* 3 Typography */
 	text-align: center;
 }
-.intro-page__list li:nth-child(2n) {
+.intro-page__list li:nth-child(2n) a {
 	/* 4 Visual */
 	background-color: #eee;
 }
 .intro-page__list a {
+	/* 2 Block model */
+	display: block;
+
 	/* 3 Typography */
 	color: #000000;
 	text-decoration: none;
 }
-.intro-page__list li:hover {
+.intro-page__list li a:hover {
 	/* 4 Visual */
 	background-color: rgba($color: rgb(105, 103, 103), $alpha: 0.4);
 }
-.intro-page__list li:nth-child(2n):hover {
+.intro-page__list li:first-child a:hover {
+	/* 4 Visual */
+	background-color: transparent;
+}
+.intro-page__list li:nth-child(2n) a:hover {
 	/* 4 Visual */
 	background-color: rgba($color: rgb(185, 185, 185), $alpha: 0.7);
 }
